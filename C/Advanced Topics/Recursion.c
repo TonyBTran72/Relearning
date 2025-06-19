@@ -9,6 +9,16 @@ the factorial of 0 is equal to 1 (0! = 1).
 
 #include <stdio.h>
 
+unsigned int factorial(unsigned int x){
+    if(x == 0){
+        return 1;
+    }
+    else{
+        return x * factorial(x-1);
+    }
+    return 0;
+}
+
 int main() {
     /* testing code */
     printf("0! = %i\n", factorial(0));
@@ -19,11 +29,3 @@ int main() {
 
 /* define your function here (don't forget to declare it) */
 
-int factorial(int a){
-    if(a == 0){
-        return 1;
-    }
-    else{
-        
-    }
-}
